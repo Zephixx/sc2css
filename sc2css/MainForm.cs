@@ -1143,4 +1143,3 @@ public class MainForm : Form
 		base.PerformLayout();
 	}
 }
-
