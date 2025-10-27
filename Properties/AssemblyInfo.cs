@@ -3,6 +3,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using System.Security;
+using System.Security.Permissions;
 
 [assembly: AssemblyTitle("sc2css")]
 [assembly: AssemblyDescription("")]
@@ -15,3 +17,5 @@ using System.Runtime.Versioning;
 [assembly: Guid("7c550d68-dda2-471e-b9bd-3bd6b7c00110")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyVersion("1.0.0.0")]
+// [module: RefSafetyRules(11)]
+
