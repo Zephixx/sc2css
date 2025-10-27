@@ -25,13 +25,19 @@ public class InfoEditor : Form
 
 	private Label cssIndexLabel;
 
-	public InfoEditor()
-	{
-		InitializeComponent();
-		comboBox1.SelectedIndex = 0;
-	}
+    public InfoEditor()
+    {
+        InitializeComponent();
 
-	private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+   
+        costumeCountBox.Maximum = 9999;
+        cssIndexBox.Maximum = 9999;
+
+        comboBox1.SelectedIndex = 0;
+    }
+
+
+    private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 	{
 		entrySelected = false;
 		costumeCountBox.Value = Css.characterEntryCostumes[comboBox1.SelectedIndex];
